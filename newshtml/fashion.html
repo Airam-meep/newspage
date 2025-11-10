@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion - 67News</title>
+
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+  font-family:'Poppins',sans-serif;
+  background:#fff;
+  color:#333;
+  margin:0;
+}
+
+    /* navbar */
+.navbar {
+  background: #b30000;
+  padding: 10px 0;
+}
+.nav-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffb3b3;
+}
+
+/* banner */
+.fashion-hero{
+  background:linear-gradient(rgba(179,0,0,.5),rgba(179,0,0,.5)),url('catwalk.gif');
+  background-size:cover;
+  background-position:center;
+  height:60vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+  animation: fadeIn 1.5s ease;
+}
+.fashion-hero h1{font-weight:700;font-size:2.4rem;}
+.fashion-hero p{font-size:1rem;margin-top:8px;}
+
+
+.fashion-section{
+  padding:50px 20px;
+}
+.section-title{
+  border-left:5px solid #b30000;
+  padding-left:10px;
+  font-weight:600;
+  font-size:1.5rem;
+  margin-bottom:30px;
+}
+
+/* left big article */
+.main-article{
+  background:#fff5f5;
+  padding:20px;
+  border-radius:8px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom:20px;
+  transition:.3s;
+}
+.main-article:hover{transform:translateY(-4px);}
+.main-article img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  margin-bottom:15px;
+}
+.main-article h2{
+  color:#b30000;
+  font-weight:600;
+  font-size:1.5rem;
+}
+
+/* right small articls */
+.side-article{
+  display:flex;
+  gap:10px;
+  background:#fff;
+  border:1px solid #eee;
+  border-radius:8px;
+  padding:10px;
+  margin-bottom:15px;
+  transition:.3s;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+.side-article:hover{
+  transform:translateX(3px);
+  background:#fff0f0;
+}
+.side-article img{
+  width:90px;height:80px;object-fit:cover;border-radius:6px;
+}
+.side-article h6{
+  font-weight:600;
+  color:#b30000;
+  font-size:1rem;
+  margin:0;
+}
+.side-article p{font-size:.85rem; margin:0;}
+
+/* footer */
+footer{
+  background:#b30000;
+  color:#fff;
+  text-align:center;
+  padding:12px;
+  margin-top:60px;
+}
+
+/*animations */
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(15px);}
+  to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+<body>
+
+<!-- navbar -->
+<div class="navbar">
+  <div class="nav-container">
+    <h1 class="logo">67News</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="editorial.html">Editorial</a></li>
+      <li><a href="comics.html">Comics</a></li>
+      <li><a href="fashion.html">Fashion</a></li>
+      <li><a href="entertainment.html">Entertainment</a></li>
+      <li><a href="sports.html">Sports</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- banner -->
+<section class="fashion-hero">
+  <div class="container">
+    <h1>Fashion Trends & Style</h1>
+    <p>Latest fits and culture</p>
+  </div>
+</section>
+
+
+<section class="fashion-section container">
+  <h2 class="section-title">Today's Highlights</h2>
+
+  <div class="row">
+    <!-- left big article -->
+    <div class="col-md-8">
+      <a href="https://www.gmanetwork.com/news/balitambayan/balita/963407/mga-student-designer-nagtagisan-ng-paglikha-ng-filipiniana-sa-tech-know-fashion-show-2025/story/" 
+         target="_blank" style="text-decoration:none; color:inherit;">
+        <div class="main-article">
+          <img src="students.jpg" alt="Main Fashion Article">
+          <h2>Mga student designer, nagtagisan sa paglikha ng Filipiniana sa Tech-Know Fashion Show 2025</h2>
+          <p>Nagtagisan sa paglikha ng iba’t ibang Filipiniana attire gamit ang Philippine Tropical Fabrics ang 15 grupo ng mga young designer at creatives mula sa iba’t ibang unibersidad at fashion design institute sa bansa.</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- right small articles -->
+    <div class="col-md-4">
+      <a href="https://www.gmanetwork.com/news/video/balitanghali/670353/ilang-kapuso-stars-rumampa-sa-latest-colletion-ng-pinoy-designer-na-si-leo-almodal/video/" target="_blank" style="text-decoration:none; color:inherit;">
+        <div class="side-article">
+          <img src="kap.jpg" alt="Small 1">
+          <div>
+            <h6>Ilang Kapuso stars, rumampa sa latest colletion ng Pinoy designer na si Leo Almodal</h6>
+            <p>Umawra sa runway si Herlene Budol!</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.gmanetwork.com/news/video/unangbalita/728874/filipino-designers-nagtagisan-ng-creativity-at-talent-sa-malikhaing-pinoy-the-grant-2025-ng-fashion-aid-philippines-at-dti/video/" target="_blank" style="text-decoration:none; color:inherit;">
+        <div class="side-article">
+          <img src="create.jpg" alt="Small 2">
+          <div>
+            <h6>Filipino designers, nagtagisan ng creativity at talent sa 'Malikhaing Pinoy, The Grant 2025' ng Fashion Aid Philippines at DTI</h6>
+            <p>Para mas matulungan pa ang Filipino creative designers, magkatuwang ang Fashion Aid Philippines at Department of Trade and Industry sa programang 'Malikhaing Pinoy, The Grant 2025.'</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.gmanetwork.com/news/lifestyle/artandculture/961489/filipino-designers-exhibit-creativity-in-malikaing-pinoy-the-grant-2025/story/" 
+         target="_blank" style="text-decoration:none; color:inherit;">
+        <div class="side-article">
+          <img src="pinoy.png" alt="Small 3">
+          <div>
+            <h6>Filipino designers exhibit creativity in 'Malikhaing Pinoy, The Grant 2025'</h6>
+            <p>Several Filipino designers showcased their creative talent in making clothing, accessories, bags, and furniture during the “Malikhaing Pinoy, The Grant 2025” competition in Intramuros, Manila.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <p>Fernandez, Maria Venice V. | BS EMC 1-1</p>
+  <p>(All information here has been taken from various news websites to be used for educational purposes)</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
